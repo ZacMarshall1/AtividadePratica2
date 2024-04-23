@@ -3,11 +3,11 @@ public class Prints
     public static void ChoicePrints() 
     {
         System.out.println("\nWhat is your action?");
-        System.out.println("1: See your cards?");
-        System.out.println("2: See your health?");
-        System.out.println("3: Create a new card?");
-        System.out.println("4: Draw a sacrifice card?");
-        System.out.println("5: Exit program.");
+        System.out.println("1: If you wish to see your cards.");
+        System.out.println("2: If you wish to see your health");
+        System.out.println("3: If you wish to create a new card");
+        System.out.println("4: If you wish to draw a sacrifice card?");
+        System.out.println("5: If you wish to end the program.");
     }
 
     public static void Exit()
