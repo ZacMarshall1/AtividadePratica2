@@ -14,7 +14,7 @@ public class CreatureCreator
 {
     private static Scanner scanner = new Scanner(System.in);
 
-    public static CreatureCard CreateCard() 
+    public static CreatureCard CreateCard(CreatureCard[] deck) 
     {
         try 
         {
@@ -36,7 +36,17 @@ public class CreatureCreator
             if (!isValidType(type)) 
             {
                 System.out.println("Invalid type. Please choose one of the following: lizard, bird, canine, deer");
-                return CreateCard();
+                return CreateCard(deck);
+            }
+
+            for (int i = 0; i < deck.length; i++)
+            {
+                if (deck[i] == null)
+                {
+                    deck [i] = new CreatureCard(cardName, damage, health, cost, type);
+                    System.out.println("You added " + cardName + "to your deck.");
+                    break;
+                }
             }
 
     
@@ -46,13 +56,12 @@ public class CreatureCreator
             System.out.println("Health: " + health);
             System.out.println("Cost: " + cost);
             System.out.println("Type: " + type);
-            System.out.println("I addded the card to your deck. You must now use it in future battles.");
     
             return new CreatureCard(cardName, damage, health, cost, type);
     
         } catch (NumberFormatException e) {
             System.out.println("Nice try. Although I shall not fall for that foul trick.");
-            return CreateCard();
+            return CreateCard(deck);
         }
     }
 
