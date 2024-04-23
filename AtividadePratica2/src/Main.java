@@ -18,7 +18,7 @@ public class Main
                 switch (choice)
                 {
                     case 1:
-
+                        ShowCards.printDeck(deck);
                         break;
                     case 2:
 
