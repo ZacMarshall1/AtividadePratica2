@@ -2,11 +2,11 @@ public class ShowCards
 {
     public static void printDeck(CreatureCard[] deck) 
     {
-        System.out.println("Your cards so far...");
         if (deck[0] == null) 
         {
             System.out.println("Your deck is empty, perhaps you should make some new cards.");
         } else {
+            System.out.println("Your cards so far...");
             for (CreatureCard card : deck) 
             {
                 if (card != null) 

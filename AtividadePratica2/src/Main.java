@@ -5,7 +5,7 @@ public class Main
     public static void main(String[] args)
     {
         Scanner scanner = new Scanner(System.in);
-        CreatureCard[] deck = new CreatureCard[10];
+        CreatureCard[] deck = new CreatureCard[3];
 
         while (true)
         {
