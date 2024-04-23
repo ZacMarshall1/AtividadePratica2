@@ -17,6 +17,6 @@ public class Prints
 
     public static void DefaultResponse()    
     {
-        System.out.println("\n I will not allow that option, try another one. \n");
+        System.out.println("I will not allow that option, try another one. \n");
     }
 }

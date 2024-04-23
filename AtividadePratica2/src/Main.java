@@ -10,42 +10,37 @@ public class Main
         {
             Prints.ChoicePrints();
 
-            int choice = scanner.nextInt();
-
             if (scanner.hasNextInt())
             {
-                choice = scanner.nextInt();
+                int choice = scanner.nextInt();
                 scanner.nextLine();
-            } else
+                switch (choice)
+                {
+                    case 1:
+
+                        break;
+                    case 2:
+
+                        break;
+                    case 3:
+
+                        break;
+                    case 4:
+
+                        break;
+                    case 5:
+                        Prints.Exit();
+                        return;
+                    default:
+                        Prints.DefaultResponse();
+                        break;
+            
+                }
+            } else 
             {
                 scanner.nextLine();
-                Prints.DefaultResponse();;
-                continue;
+                Prints.DefaultResponse();
             }
-
-            scanner.nextLine();
-
-            switch (choice)
-            {
-                case 1:
-
-                    break;
-                case 2:
-
-                    break;
-                case 3:
-
-                    break;
-                case 4:
-
-                    break;
-                case 5:
-                    Prints.Exit();
-                    return;
-                default:
-                    Prints.DefaultResponse();
-            }
-        
         }
     }
 }
