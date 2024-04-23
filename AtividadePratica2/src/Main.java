@@ -23,7 +23,7 @@ public class Main
 
                         break;
                     case 3:
-
+                        CreatureCreator.CreateCard();
                         break;
                     case 4:
 

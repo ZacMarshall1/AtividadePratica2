@@ -3,12 +3,14 @@ public class Card
     private String cardName;
     private int damage;
     private int health;
+    private int cost;
 
-    public Card(String cardName, int damage, int health)
+    public Card(String cardName, int damage, int health, int cost)
     {
         this.cardName = cardName;
         this.damage = damage;
         this.health = health;
+        this.cost = cost;
     }
 
     public String getCardName()
@@ -39,5 +41,15 @@ public class Card
     public void setHealth(int health)
     {
         this.health = health;
+    }
+
+    public int getCost()
+    {
+        return cost;
+    }
+
+    public void setCost(int cost)
+    {
+        this.cost = cost;
     }
 }
