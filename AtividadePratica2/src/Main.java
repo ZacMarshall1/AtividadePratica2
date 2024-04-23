@@ -6,6 +6,7 @@ public class Main
     {
         Scanner scanner = new Scanner(System.in);
         CreatureCard[] deck = new CreatureCard[3];
+        PlayerCard playerCard = new PlayerCard();
 
         while (true)
         {
@@ -21,7 +22,7 @@ public class Main
                         ShowCards.printDeck(deck);
                         break;
                     case 2:
-
+                        System.out.println("Your current vitality is sitting at " + playerCard.getPlayerHealth() + ". I would be careful with that if i were you." );
                         break;
                     case 3:
                         CreatureCreator.CreateCard(deck);
