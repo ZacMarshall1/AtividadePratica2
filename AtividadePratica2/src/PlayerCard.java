@@ -7,6 +7,7 @@ public class PlayerCard extends Card
 
     public int getPlayerHealth()
     {
-        return this.getHealth();
+        return this.getPlayerHealth();
     }
+
 }

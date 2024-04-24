@@ -5,7 +5,7 @@ public class Main
     public static void main(String[] args)
     {
         Scanner scanner = new Scanner(System.in);
-        CreatureCard[] deck = new CreatureCard[3];
+        CreatureCard[] deck = new CreatureCard[4];
         PlayerCard playerCard = new PlayerCard();
 
         while (true)
@@ -28,7 +28,7 @@ public class Main
                         CreatureCreator.CreateCard(deck);
                         break;
                     case 4:
-
+                        DrawSacCard.printSacCardCount(null);
                         break;
                     case 5:
                         Prints.Exit();

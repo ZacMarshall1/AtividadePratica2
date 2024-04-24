@@ -6,7 +6,8 @@ public class Prints
         System.out.println("1: If you wish to see your cards.");
         System.out.println("2: If you wish to see your health");
         System.out.println("3: If you wish to create a new card");
-        System.out.println("4: If you wish to end the program.");
+        System.out.println("4: If you wish to draw a sacrifice card?");
+        System.out.println("5: If you wish to end the program.");
     }
 
     public static void Exit()

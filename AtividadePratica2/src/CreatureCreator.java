@@ -3,8 +3,8 @@ import java.util.Scanner;
 public class CreatureCreator 
 {
     private static Scanner scanner = new Scanner(System.in);
-
-    public static CreatureCard CreateCard(CreatureCard[] deck) 
+    static SacCard sacCard = new SacCard(null);
+    public static Card CreateCard(CreatureCard[] deck) 
     {
         try 
         {
@@ -34,6 +34,7 @@ public class CreatureCreator
                 if (deck[i] == null) 
                 {
                     deck[i] = new CreatureCard(cardName, damage, health, cost, type);
+                    deck[i+1] = sacCard;
                     System.out.println("You added " + cardName + " to your deck.");
                     break;
                 }
